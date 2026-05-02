@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<title>الرئيسية</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+<div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+        <div class="logo"></div>
+    <img src="./img/شعار الجامعة.jpg" alt="logo" width="50" height="50" class="me-2" style="border-radius: 50%;">
+
+    (<span style="color: rgb(160, 131, 58);">S</span><Span style="color: rgb(18, 137, 235);">VU</Span>) منصة دليل  
+      </a>
+      <button class="btn btn-dark" onclick="toggleDark()">🌙</button>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+    
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+<li class="nav-item"><a class="nav-link" href="events.html">الفعاليات</a></li>
+<!--<li class="nav-item"><a class="nav-link" href="event.html"> تفاصيل الفعاليات</a></li>-->
+<li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- أبرز الأحداث -->
+<div class="container mt-4 text-center">  
+
+
+<h1 id="mainTitle" style="color: rgb(226, 7, 7);
+"> أهلا وسهلا بكم </h1>
+<p id="mainDesc">  في منصتنا سنقدم أجمل و أهم فعاليات الجامعة الأفتراضية السورية   
+       <p id="mainDesc"> Syrian Virtual University
+<h3 id="mainTitle" style="color: rgb(255, 0, 0);">جامعتي تطل على العالم </h3>
+<h3 id="mainTitle">: أبرز الأحداث هذا الأسبوع </h3>
+<div id="eventSlider" class="carousel slide mt-3" data-bs-ride="carousel">
+<!--
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#eventSlider" data-bs-slide-to="0" class="active"></button>
+<button type="button" data-bs-target="#eventSlider" data-bs-slide-to="1"></button>
+<button type="button" data-bs-target="#eventSlider" data-bs-slide-to="2"></button>
+</div>
+-->
+<div class="carousel-inner">
+
+<div class="carousel-item active">
+<img  style=" width: 100%; height: 100%; object-fit: contain;" src="./img/خريف.jpg">
+<div class="carousel-caption">
+<h5 id="slide1" style="color: rgb(10, 10, 10);"> مفاضلة الخريف</h5>
+</div>
+</div>
+
+<div class="carousel-item">
+<img  style=" width: 100%; height: 100%; object-fit: contain;" src="./img/حفلة موسيقية للتخرج.jpg">
+<div class="carousel-caption">
+<h5 id="slide2" style="color: rgb(219, 215, 215);">حفل تخرج</h5>
+</div>
+</div>
+
+<div class="carousel-item">
+<img  style=" width: 100%; height: 100%; object-fit: contain;" src="./img/مشاركة.jpg">
+<div class="carousel-caption">
+<h5 id="slide3" style="color: rgb(12, 10, 10);"> فعالية برمجية</h5>
+</div>
+</div>
+
+</div>
+
+<button class="carousel-control-prev" type="button" data-bs-target="#eventSlider" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+
+<button class="carousel-control-next" type="button" data-bs-target="#eventSlider" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+
+</div>
+
+</div>
+<!-- التصنيفات -->
+<div class="container mt-4 text-center">
+
+<h3 id="catTitle">تصنيفات سريعة</h3>
+
+<button class="btn btn-primary m-1" onclick="filterEvents('all')" id="allBtn">عرض الكل</button>
+<button class="btn btn-secondary m-1" onclick="filterEvents('edu')" id="eBtn">إداري</button>
+<button class="btn btn-secondary m-1" onclick="filterEvents('music')" id="mBtn">ثقافي</button>
+<button class="btn btn-secondary m-1" onclick="filterEvents('culture')" id="cBtn">أكاديمي</button>
+</div>
+
+<!-- أحدث الفعاليات -->
+<div class="container mt-4">
+
+<h3 class="text-center" id="latestTitle">أحدث الفعاليات</h3>
+
+<div class="row">
+<div class="col-md-4 event edu">
+<div class="card p-2">
+<img src="./img/وزير التعليم يفتتح مركز.jpg" width="100%">
+<h5 id="latestTitle1">افتتاح مركز نفاذ جديد</h5>
+<p id="latestTitle2">في إطار تطوير البنية التعليمية، افتتحت الجامعة الافتراضية السورية مركزاً جديداً لتعزيز التعلم الإلكتروني وخدمة الطلاب.</p>
+</div>
+</div>
+<div class="col-md-4 event music">
+<div class="card p-2">
+<img src="./img/حفلة موسيقية للتخرج.jpg" width="90%">
+<h5 id="ss">حفل تخرج</h5>
+<p id="aa">احتفال بتخرج طلاب الجامعة الافتراضية السورية مع فقرات موسيقية مميزة.</p>
+</div>
+</div>
+<div class="col-md-4 event culture">
+<div class="card p-2">
+<img src="./img/فعالية برمجية.jpg" width="100%">
+<h5 id="dd">مسابقة برمجية</h5>
+<P id="ff">   إحراز فريق(Watermelon Juice Tree) من الجامعة الافتراضية السورية المركزالأول في فعاليات النهائي الوطني الخامس عشر للمسابقة البرمجية السورية للجامعات.</p>
+</div>
+</div>
+
+
+
+
+</div>
+
+</div>
+
+<!-- 👥 المشاركين -->
+<div class="container mt-4">
+<h2 id="rr">  :تم إعداد المشروع من قبل </h2>
+<div class="row justify-content-center">
+ <div class="col-6 mb-3">
+<div class="border rounded p-2 bg-body text-center" style="color: black;">
+<p id="hh">حيدر
+     بلقيس</p>
+<small>haidar
+    _232094</small>
+</div>
+</div>
+
+<div class="col-6 mb-3">
+<div class="border rounded p-2 bg-body text-center" style="color: black;">
+<p id="ww">محمد ناصر
+     علاء الدين
+   </p>
+<small>mohammad
+    _naser
+    _199762</small>
+</div>
+</div>
+
+<div class="col-5 mb-3">
+<div class="border rounded p-2 bg-body text-center" style="color: black;">
+<p id="mm">محمد
+     محمود</p>
+<small>mohamad
+    _302125</small>
+</div>
+</div>
+
+<div class="col-7 mb-3">
+<div class="border rounded p-2 bg-body text-center" style="color: black;">
+<p id="tt">عبد الرحمن 
+    الدعاس
+    </p>
+<small  >Abdalrahman
+    _391298</small>
+</div>
+</div>
+
+<div class="col-7 mb-1">
+ <div class="border rounded p-2 bg-body text-center" style="color: black;">
+<p id="nn">محمد خير
+     مطيع</p>
+<small>mhd
+
+    _khir
+    _235995</small>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<!-- Footer -->
+<footer class="bg-primary text-white text-center p-4 mt-4">
+<p>📞 0933333333 | 📧 info@(<span style="color: darkgoldenrod;">S</span><Span style="color: rgb(11, 42, 73);">VU</Span>).edu</p>
+<p><span> <a  href="https://www.facebook.com/share/14ZQRuGyiix/" style="color: beige;"> Facebook </a></span>| <span> <a href="https://www.facebook.com/share/14ZQRuGyiix/" style="color: beige;">Instagram </a></span>|<a href="https://t.me/svuonlineTic" style="color: beige;"> Telegram </a> </span> </p>
+<p>© جميع الحقوق محفوظة - الجامعة الافتراضية السورية</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body></html>
